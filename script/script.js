@@ -6,7 +6,7 @@ function download(){
         margin: 1,
         filename: 'myFileName.pdf',
         html2canvas: {scale: 2},
-        jsPDF: { unit: "in",format: "letter", orientation: "portrait"},
+        jsPDF: { unit: "in",format: "a3", orientation: "portrait"},
     };
     html2pdf().set(opt).from(item).save()
 }
